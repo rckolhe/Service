@@ -1,0 +1,7 @@
+<p>Country Component</p>
+<input type="text" #name/><br><br><br>
+<button name="Submit" (click)="Detail(name.value)">Submit</button>
+<br><br><br>
+<ul>
+    <li *ngFor="let country of countryList">{{ country['name']+'='+country['capital']}}</li>
+</ul>
