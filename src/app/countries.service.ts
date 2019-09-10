@@ -12,6 +12,7 @@ export class CountriesService {
   }
   getCountry(country:string):Observable<any>
   {
-    return this._httpClient.get("https://restcountries.eu/rest/v2/name/"+country+"?fullText=true");
+    return this._httpClient.get("https://restcountries.eu/rest/v2/name/"
+                            +country+"?fullText=true");
   }
 }
